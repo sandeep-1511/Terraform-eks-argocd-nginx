@@ -25,12 +25,12 @@ Step 4: Connect Terraform to AWS
 Step 5: Create Terraform modules
 These are the 6 files you will create to deploy your eks cluster:
 
-Create VPC module
-Create EKS module
-Create Security Groupe module
-Create variables
-Create version
-Create output
+         Create VPC module  
+         Create EKS module
+         Create Security Groupe module
+         Create variables
+         Create version
+         Create output
 
 
 
