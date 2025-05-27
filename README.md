@@ -1,11 +1,19 @@
 Step 1: Create the architecture
 This structure shows the key components and their roles in deploying the EKS cluster:
 
+terraform-eks-argocd-nginx/
+├── terraform/ # Terraform code for EKS & VPC
+├── manifests/ # Kubernetes manifests (Deployment & Service)
+├── argocd/ # ArgoCD Application resource
+└── README.md
 
+##   Prerequisites
 
-![vzehtjj9hy4pxysgopwf](https://github.com/user-attachments/assets/f2d55a41-1173-44a9-b96c-70e2a9f65bdc)
-
-
+- AWS CLI configured (`aws configure`)
+- Terraform v1.5+
+- kubectl
+- Helm
+- A GitHub repo
 
 
 Step 2: Install AWS CLI
@@ -41,4 +49,14 @@ Apply Terraform to Deploy EKS Cluster
 terraform apply
 
 Type yes to confirm and start deploying your infrastructure.
+
+
+
+Step 3: Install ArgoCD via Helm
+
+helm repo add argo https://argoproj.github.io/argo-helm
+helm install argocd argo/argo-cd \
+  --namespace argocd --create-namespace \
+  --set server.service.type=LoadBalancer
+
 
