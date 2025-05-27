@@ -3,6 +3,28 @@ This structure shows the key components and their roles in deploying the EKS clu
 
 EKS Cluster Deployment
 ├── VPC Module
+│   ├── Subnets (Public/Private)
+│   ├── Route Tables
+│   └── Internet Gateway
+├── EKS Module
+│   ├── Control Plane
+│   └── Worker Nodes
+├── Security Group Module
+│   ├── Ingress Rules (Inbound Traffic)
+│   └── Egress Rules (Outbound Traffic)
+├── Variables
+│   ├── VPC Configuration (CIDR Blocks, etc.)
+│   ├── EKS Cluster Settings (Instance Types, etc.)
+│   └── Security Group Parameters (Ports, etc.)
+├── Versions
+│   ├── Terraform Version
+│   ├── AWS Provider Version
+│   └── Kubernetes Provider Version
+└── Outputs
+    ├── VPC ID
+    ├── EKS Cluster Name
+    └── Security Group IDsEKS Cluster Deployment
+├── VPC Module
 │ ├── Subnets
 │ ├── Route Tables
 │ └── Internet Gateway
@@ -10,20 +32,7 @@ EKS Cluster Deployment
 │ ├── Worker Nodes
 │ └── Control Plane
 ├── Security Group Module
-│ ├── Ingress Rules
-│ └── Egress Rules
-├── Variables
-│ ├── VPC Configuration
-│ ├── EKS Cluster Settings
-│ └── Security Group Parameters
-├── Versions
-│ ├── Terraform Version
-│ ├── AWS Provider Version
-│ └── Kubernetes Provider Version
-└── Outputs
-├── VPC ID
-├── EKS Cluster Name
-└── Security Group IDs
+
 
 Step 2: Install AWS CLI
 
