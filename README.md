@@ -26,17 +26,10 @@ EKS Cluster Deployment
 └── Security Group IDs
 
 Step 2: Install AWS CLI
-Follow the below link to Install AWS CLI.
-
-               https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
-
 
 Step 3: Install Terraform
 
-
 Step 4: Connect Terraform to AWS
-
-
 
 Step 5: Create Terraform modules
 These are the 6 files you will create to deploy your eks cluster:
