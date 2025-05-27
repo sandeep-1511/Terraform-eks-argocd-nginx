@@ -1,6 +1,8 @@
 Step 1: Create the architecture
 This structure shows the key components and their roles in deploying the EKS cluster:
 
+
+
 EKS Cluster Deployment
 ├── VPC Module
 │   ├── Subnets (Public/Private)
@@ -21,17 +23,10 @@ EKS Cluster Deployment
 │   ├── AWS Provider Version
 │   └── Kubernetes Provider Version
 └── Outputs
-    ├── VPC ID
-    ├── EKS Cluster Name
-    └── Security Group IDsEKS Cluster Deployment
-├── VPC Module
-│ ├── Subnets
-│ ├── Route Tables
-│ └── Internet Gateway
-├── EKS Module
-│ ├── Worker Nodes
-│ └── Control Plane
-├── Security Group Module
+├── VPC ID
+├── EKS Cluster Name
+└── Security Group IDs
+
 
 
 Step 2: Install AWS CLI
