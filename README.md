@@ -30,6 +30,10 @@ Step 6: Run Terraform
 Initialize Terraform
 terraform init
 
+
+ ![Uploading image.png…]()
+
+
 Review Terraform Plan
 terraform plan
 
