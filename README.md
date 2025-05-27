@@ -1,11 +1,11 @@
 Step 1: Create the architecture
 This structure shows the key components and their roles in deploying the EKS cluster:
 
-terraform-eks-argocd-nginx/
-├── terraform/ # Terraform code for EKS & VPC
-├── manifests/ # Kubernetes manifests (Deployment & Service)
-├── argocd/ # ArgoCD Application resource
-└── README.md
+           terraform-eks-argocd-nginx/
+           ├── terraform/ # Terraform code for EKS & VPC
+           ├── manifests/ # Kubernetes manifests (Deployment & Service)
+           ├── argocd/ # ArgoCD Application resource
+           └── README.md
 
 ##   Prerequisites
 
@@ -38,8 +38,6 @@ Step 6: Run Terraform
 Initialize Terraform
 terraform init
 
-
- ![Uploading image.png…]()
 
 
 Review Terraform Plan
