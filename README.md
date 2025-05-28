@@ -60,3 +60,16 @@ helm install argocd argo/argo-cd \
   --set server.service.type=LoadBalancer
 
 
+To log in to Argo
+
+              argocd_initial_admin_secret = "kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath={.data.password} | base64 -d"
+              argocd_server_load_balancer = "a53a6bf4abebe46f79da6179425ca5f4-7d359c1121a50305.elb.eu-west-1.amazonaws.com"
+
+
+We need to get the initial ArgoCD admin secret, so we can run the first command for that:
+
+                kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath=\"{.data.password}\" | base64 -d"
+
+I have used domain that is not valid just i adde3d we can configure this way (optional)
+
+
