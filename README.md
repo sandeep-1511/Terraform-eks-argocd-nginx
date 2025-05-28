@@ -48,7 +48,9 @@ terraform apply
 
 Type yes to confirm and start deploying your infrastructure.
 
+Now, we need to connect to our Kubernetes cluster. This can be done by running the following command:
 
+                 aws eks --region us-east-1 update-kubeconfig --name <cluster-name>
 
 Step 3: Install ArgoCD via Helm
 
